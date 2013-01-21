@@ -1,4 +1,5 @@
 #!/usr/bin/env rake
+require File.expand_path('../lib/footable-rails/version', __FILE__)
 
 desc "Update assets"
 task :update do
@@ -14,5 +15,5 @@ end
 
 desc "Build and publish the gem"
 task :publish => :build do
-  system("gem push footable-rails-#{FooTableRails::Rails::VERSION}.gem")
+  system("gem push footable-rails-#{FootableRails::Rails::VERSION}.gem")
 end
