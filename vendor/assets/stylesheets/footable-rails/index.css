@@ -1,2 +1,4 @@
-*= require ./footable
-*= require_tree ./plugins/
+/*
+ *= require ./footable
+ *= require_tree ./plugins/
+ */
